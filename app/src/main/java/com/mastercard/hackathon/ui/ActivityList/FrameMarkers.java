@@ -15,6 +15,7 @@ import java.util.Vector;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.graphics.Color;
@@ -127,7 +128,11 @@ public class FrameMarkers extends Activity implements SampleApplicationControl,
         {
             return true;
         }
-        
+
+        @Override
+        public boolean onDoubleTap(MotionEvent e) {
+            return true;
+        }
         
         @Override
         public boolean onSingleTapUp(MotionEvent e)
@@ -148,6 +153,7 @@ public class FrameMarkers extends Activity implements SampleApplicationControl,
             
             return true;
         }
+
     }
 
     // Adds the Overlay view to the GLView
@@ -303,10 +309,8 @@ public class FrameMarkers extends Activity implements SampleApplicationControl,
     @Override
     public boolean onTouchEvent(MotionEvent event)
     {
-        // Process the Gestures
-        if (mSampleAppMenu != null && mSampleAppMenu.processEvent(event))
-            return true;
-        
+
+
         return mGestureDetector.onTouchEvent(event);
     }
     
@@ -352,8 +356,8 @@ public class FrameMarkers extends Activity implements SampleApplicationControl,
     }
     
     public void onBuyClick(View v) {
-
-        Toast.makeText(this, "BUY!", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, PaymentActivity.class);
+        startActivity(intent);
     }
 
     public void onLeftClick(View v) {

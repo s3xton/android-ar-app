@@ -83,7 +83,7 @@
         -->
         <!-- Splash Screen Activity -->
          <activity
-            android:name="com.mastercard.hackathon.ui.ActivityList.ActivitySplashScreen"
+            android:name="demoApplication.ui.ActivitySplashScreen"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:screenOrientation="portrait"
             android:noHistory="true"
@@ -96,7 +96,7 @@
          </activity>
         
         <activity
-            android:name="com.mastercard.hackathon.ui.ActivityList.ActivityLauncher"
+            android:name="demoApplication.ui.ActivityLauncher"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:screenOrientation="portrait"
             >
@@ -109,6 +109,8 @@
  	        android:launchMode="singleTask"
             >
         </activity>
+
+        <activity android:name=".ui.ActivityList.PaymentActivity"></activity>
          
     </application>
 

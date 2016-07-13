@@ -9,6 +9,7 @@ countries.
 
 package com.mastercard.hackathon.utils;
 
+import java.io.Serializable;
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
