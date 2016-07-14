@@ -8,6 +8,9 @@
     <color name="semi_transparent_black">#C8000000</color>
     <color name="transparent">#00000000</color>
     <color name="mc_blue">#000066</color>
+    <color name="orange">#FF9800</color>
+    <color name="dark_grey">#424242</color>
+    <color name="light_grey">#616161</color>
     
     <color name="overlay_bottom_bar_separators">#333333</color>
     <color name="overlay_bottom_bar_background">#1E1E1E</color>

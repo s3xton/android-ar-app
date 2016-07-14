@@ -224,7 +224,7 @@ public class FrameMarkerRenderer implements GLSurfaceView.Renderer
             switch (productIndex)
             {
                 case 0:
-                    float watchScale = 160;
+                    float watchScale = 145;
                     vertices = watchObject.getVertices();
                     normals = watchObject.getNormals();
                     texCoords = watchObject.getTexCoords();
@@ -236,7 +236,7 @@ public class FrameMarkerRenderer implements GLSurfaceView.Renderer
                             watchScale);
                     break;
                 case 1:
-                    float teapotScale = 8.f;
+                    float teapotScale = 4.5f;
 
                     vertices = teapotObject.getVertices();
                     normals = teapotObject.getNormals();

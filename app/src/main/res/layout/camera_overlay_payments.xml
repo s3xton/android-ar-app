@@ -36,12 +36,13 @@
         android:weightSum="1" >
 
         <TextView
+            android:id="@+id/product_name_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:layout_marginBottom="20dp"
-            android:text="$150 - Gold Watch"
+            android:text="€149.99 - Designer Watch"
             android:textColor="@color/white"
             android:textSize="30dp"
             android:textAlignment="center"/>
