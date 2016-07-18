@@ -35,9 +35,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
 import com.vuforia.CameraDevice;
 import com.vuforia.Marker;
 import com.vuforia.MarkerTracker;
@@ -96,12 +93,6 @@ public class FrameMarkers extends Activity implements SampleApplicationControl,
     private AlertDialog mErrorDialog;
 
     boolean mIsDroidDevice = false;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    private GoogleApiClient client;
-
 
     // Called when the activity first starts or the user navigates back to an
     // activity.
@@ -125,9 +116,6 @@ public class FrameMarkers extends Activity implements SampleApplicationControl,
 
         mIsDroidDevice = Build.MODEL.toLowerCase().startsWith(
                 "droid");
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     // Process Single Tap event to trigger autofocus
@@ -347,7 +335,7 @@ public class FrameMarkers extends Activity implements SampleApplicationControl,
     }
 
     public void onBuyClick(View v) {
-        Intent intent = new Intent(this, PaymentActivity.class);
+        Intent intent = new Intent(this, ChoiceActivity.class);
         int index = mRenderer.getProductIndex();
         intent.putExtra("product_name", getProductNames()[index]);
         intent.putExtra("product_price", getProductPrices()[index]);

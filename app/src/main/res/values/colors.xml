@@ -3,7 +3,7 @@
 
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
-    <color name="gray">#575757</color>
+    <color name="gray">#848484</color>
     <color name="light_gray">#D3D3D3</color>
     <color name="semi_transparent_black">#C8000000</color>
     <color name="transparent">#00000000</color>
@@ -11,6 +11,9 @@
     <color name="orange">#FF9800</color>
     <color name="dark_grey">#424242</color>
     <color name="light_grey">#616161</color>
+    <color name="green">#0b9f15</color>
+    <color name="light_green">#85ea8b</color>
+    <color name="yellow">#f5e86c</color>
     
     <color name="overlay_bottom_bar_separators">#333333</color>
     <color name="overlay_bottom_bar_background">#1E1E1E</color>
